@@ -14,26 +14,41 @@
 
     <!-- Verified Operation Definition -->
     <div class="bg-indigo-50 rounded-xl p-5 flex-shrink-0">
-      <div class="text-indigo-700 text-xs font-bold tracking-widest uppercase mb-2">Verified Operation</div>
-      <p class="text-slate-700 text-sm leading-relaxed">
-        <span class="font-bold text-slate-900">Task Resolved</span> — a task surfaced by the app (from inbox analysis, Granola extraction, or calendar sync) and marked complete by the user.
-        Clicks, logins, page views, and note saves do <span class="font-semibold">not</span> count.
-      </p>
+      <div class="text-indigo-700 text-xs font-bold tracking-widest uppercase mb-2">Verified Operations (2 types)</div>
+      <div class="flex flex-col gap-2">
+        <p class="text-slate-700 text-sm leading-relaxed">
+          <span class="font-bold text-slate-900">① Support Document Created</span> — a KB article or support doc generated from ticket context and ready for review/publish.
+        </p>
+        <p class="text-slate-700 text-sm leading-relaxed">
+          <span class="font-bold text-slate-900">② Ticket Analysis Completed</span> — a batch of Zendesk tickets reviewed by AI with patterns and metrics surfaced for the user.
+        </p>
+      </div>
     </div>
 
     <!-- Formula -->
     <div class="bg-slate-900 rounded-xl p-5 flex-shrink-0">
       <div class="text-slate-400 text-xs font-bold tracking-widest uppercase mb-3">Weekly Count — Formula</div>
-      <div class="flex flex-wrap items-center gap-2">
-        <span class="bg-slate-800 border border-amber-500 text-amber-300 text-xs font-medium px-2.5 py-1 rounded-full">100 emails/wk — Assumption, adjust this</span>
-        <span class="text-slate-500 font-bold">×</span>
-        <span class="bg-slate-800 border border-amber-500 text-amber-300 text-xs font-medium px-2.5 py-1 rounded-full">15% task rate — Assumption</span>
-        <span class="text-slate-500 font-bold">=</span>
-        <span class="text-slate-200 font-semibold text-sm">15 email tasks</span>
-        <span class="text-slate-600 font-bold">+</span>
-        <span class="bg-slate-800 border border-amber-500 text-amber-300 text-xs font-medium px-2.5 py-1 rounded-full">10 manual tasks/wk — Assumption</span>
-        <span class="text-slate-500 font-bold">=</span>
-        <span class="text-indigo-400 font-black text-xl">25 tasks / week</span>
+      <div class="flex flex-col gap-2">
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="text-slate-400 text-xs font-semibold">Docs:</span>
+          <span class="bg-slate-800 border border-amber-500 text-amber-300 text-xs font-medium px-2.5 py-1 rounded-full">50 tickets/wk — Assumption</span>
+          <span class="text-slate-500 font-bold">×</span>
+          <span class="bg-slate-800 border border-amber-500 text-amber-300 text-xs font-medium px-2.5 py-1 rounded-full">20% need a doc — Assumption</span>
+          <span class="text-slate-500 font-bold">=</span>
+          <span class="text-slate-200 font-semibold text-sm">10 docs/wk</span>
+        </div>
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="text-slate-400 text-xs font-semibold">Analysis:</span>
+          <span class="bg-slate-800 border border-amber-500 text-amber-300 text-xs font-medium px-2.5 py-1 rounded-full">50 tickets/wk — Assumption</span>
+          <span class="text-slate-500 font-bold">÷</span>
+          <span class="text-slate-300 text-sm">batch reviews</span>
+          <span class="text-slate-500 font-bold">=</span>
+          <span class="text-slate-200 font-semibold text-sm">5 analysis runs/wk</span>
+        </div>
+        <div class="flex items-center gap-2 pt-1 border-t border-slate-700">
+          <span class="text-slate-400 text-xs">Total:</span>
+          <span class="text-indigo-400 font-black text-xl">15 verified ops / week</span>
+        </div>
       </div>
     </div>
 
@@ -46,15 +61,15 @@
         <div class="flex flex-col gap-3 text-sm text-slate-600 leading-relaxed">
           <div class="flex items-start gap-2">
             <span class="text-slate-400 flex-shrink-0">①</span>
-            <span>25 tasks/wk × <span class="bg-amber-50 border border-amber-200 text-amber-700 text-xs px-2 py-0.5 rounded-full">10 min saved — Assumption</span> = 250 min = <span class="font-semibold text-slate-800">4.2 hrs/week</span></span>
+            <span>10 docs/wk × <span class="bg-amber-50 border border-amber-200 text-amber-700 text-xs px-2 py-0.5 rounded-full">45 min saved/doc — Assumption</span> = 450 min = <span class="font-semibold text-slate-800">7.5 hrs/wk</span></span>
           </div>
           <div class="flex items-start gap-2">
             <span class="text-slate-400 flex-shrink-0">②</span>
-            <span>4.2 hrs/wk × <span class="bg-amber-50 border border-amber-200 text-amber-700 text-xs px-2 py-0.5 rounded-full">$60/hr value — Assumption</span> = <span class="font-bold text-slate-900">$252 / week</span></span>
+            <span>5 analyses × <span class="bg-amber-50 border border-amber-200 text-amber-700 text-xs px-2 py-0.5 rounded-full">30 min saved — Assumption</span> = 150 min = <span class="font-semibold text-slate-800">2.5 hrs/wk</span></span>
           </div>
           <div class="flex items-start gap-2">
             <span class="text-slate-400 flex-shrink-0">③</span>
-            <span>$252/wk × 52 weeks = <span class="font-bold text-slate-900">$13,104 / year</span></span>
+            <span>10 hrs/wk × <span class="bg-amber-50 border border-amber-200 text-amber-700 text-xs px-2 py-0.5 rounded-full">$60/hr — Assumption</span> = <span class="font-bold text-slate-900">$600 / week</span></span>
           </div>
         </div>
       </div>
@@ -63,10 +78,10 @@
       <div class="flex-1 bg-indigo-600 rounded-xl p-5 flex flex-col justify-between">
         <div class="text-indigo-200 text-xs font-bold tracking-widest uppercase">Projected Annual Value</div>
         <div>
-          <div class="text-4xl font-black text-white leading-none mb-1">$13,104</div>
-          <div class="text-indigo-200 text-sm">$252 / week × 52 weeks</div>
+          <div class="text-4xl font-black text-white leading-none mb-1">$31,200</div>
+          <div class="text-indigo-200 text-sm">$600/week × 52 weeks</div>
         </div>
-        <div class="text-indigo-300 text-xs leading-relaxed">All inputs are assumptions — adjust them to your actual email volume, task rate, and hourly value.</div>
+        <div class="text-indigo-300 text-xs leading-relaxed">Adjust ticket volume, doc rate, and hourly value to your actual numbers.</div>
       </div>
 
     </div>
