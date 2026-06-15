@@ -1,0 +1,38 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-content { width: 55%; }
+  .mode-landscape .sl-visual { width: 45%; }
+  .mode-portrait .sl-content { width: 100%; flex: 1; }
+  .mode-portrait .sl-visual { display: none; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Content Column -->
+    <div class="sl-content flex flex-col justify-between p-12 bg-white">
+      <div class="flex flex-col gap-8">
+        <div class="inline-flex items-center gap-2 bg-indigo-50 text-indigo-700 text-xs font-bold tracking-widest uppercase px-4 py-2 rounded-full self-start">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          AI Productivity Hub
+        </div>
+        <div class="flex flex-col gap-5">
+          <h1 class="text-5xl font-black text-slate-900 leading-none tracking-tight">Nothing<br>Falls<br>Through.</h1>
+          <p class="text-base text-slate-500 leading-relaxed" style="max-width: 22rem">
+            Reads your inbox. Syncs your calendar. Turns Granola notes into action. Everything that matters, in one place.
+          </p>
+        </div>
+      </div>
+      <data-attribution />
+    </div>
+
+    <!-- Visual Column -->
+    <div class="sl-visual relative overflow-hidden bg-indigo-50">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=clean%20minimal%20productive%20desk%20workspace%20laptop%20open%20notebook%20coffee%20morning%20soft%20natural%20light%20overhead%20editorial%20photography%20calm%20focused%20organized"
+        alt="Productive workspace"
+        class="w-full h-full object-cover" />
+    </div>
+
+  </div>
+</section>
