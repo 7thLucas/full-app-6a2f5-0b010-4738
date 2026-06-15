@@ -1,44 +1,47 @@
 # Product Overview
 
 ## Working Title
-Personal AI Productivity Hub *(final app name to be confirmed)*
+Zendesk AI Productivity Hub *(final app name to be confirmed)*
 
 ## What It Is
-A personal AI-powered command center that reads your inbox, syncs your calendar, and extracts action items from your Granola meeting notes — then surfaces the tasks that matter, reminds you of what's outstanding, and keeps all your notes alongside your work. One place where nothing falls through.
+A personal AI-powered command center built around Zendesk. It reviews tickets and surfaces key metrics, auto-generates support documentation and Knowledge Base articles, produces HTML code for support content, tracks tasks, stores notes, sends reminders for outstanding items, and syncs with calendar and Granola meeting notes. One place where support operations run faster and nothing falls through.
 
 ## Target User
-Individual professionals and knowledge workers who:
-- Manage a high volume of email and action items daily
-- Use Granola for meeting notes and want those to automatically drive follow-up tasks
-- Have busy, calendar-driven schedules where commitments get lost across tools
-- Need a lightweight personal system — not enterprise workflow software
+Individual support engineers, support managers, or customer success leads who:
+- Review a high volume of Zendesk tickets daily and need metrics/insights surfaced quickly
+- Manually write support documentation and Knowledge Base articles — a slow, repetitive task
+- Need to produce HTML code for Zendesk help center content
+- Juggle ticket-related tasks and follow-ups across too many tools
+- Use Granola for support team meetings and want action items to flow into their workflow
 
 ## Core Problem
-Your work lives in at least three places — inbox, calendar, Granola — but your task list lives in none of them. Manually extracting and re-entering actions across tools is slow, error-prone, and guarantees important things get dropped.
+Zendesk work is split across too many surfaces. Ticket review is manual and time-consuming. Creating support documents and their HTML is slow and disconnected from the tickets that triggered the need. Tasks, notes, and follow-ups scatter across email, Slack, and calendar. Nothing is automated and every artifact takes longer than it should.
 
 ## Core Solution
-A unified hub that reads the tools you already use and turns them into a single intelligent task list:
+A unified hub that connects directly to Zendesk and the user's other tools:
 
-- **Inbox analysis** — AI reads incoming email and creates tasks from actionable messages
-- **Task tracking** — full create / view / prioritize / complete task management
-- **Note storage** — notes attached to tasks or freestanding, always searchable
-- **Smart reminders** — proactive nudges for outstanding and overdue tasks
-- **Calendar integration** — sync with Google Calendar / Apple Calendar so tasks align with your schedule
-- **Granola integration** — action items extracted from Granola meeting notes and added as tasks automatically
+- **Zendesk ticket analysis** — AI reviews tickets, surfaces patterns, highlights escalations, and extracts key metrics
+- **Support document creation** — auto-generate Knowledge Base articles and support docs from ticket context
+- **HTML code generation** — produce ready-to-publish HTML for Zendesk help center articles
+- **Task tracking** — manage support-related tasks: ticket follow-ups, doc reviews, publishing approvals
+- **Note storage** — capture context notes per ticket, linked to tasks or freestanding
+- **Smart reminders** — proactive nudges for outstanding ticket responses and overdue tasks
+- **Calendar integration** — sync with Google / Apple Calendar so review schedules and deadlines align with tasks
+- **Granola integration** — extract action items from Granola support team meeting notes automatically
 
 ## Positioning
-The go-to productivity hub for professionals who cannot afford dropped balls. Unlike generic to-do apps that require manual input, this app reads where you actually work and brings the tasks to you.
+The Zendesk power user's AI layer. Unlike generic to-do apps, this tool understands Zendesk operations — it reads your tickets, writes your docs, and generates your HTML so you can focus on what only you can do: judgment calls, escalations, and customer relationships.
 
 ## Brand & Tone
-Calm. Focused. Reliable. Not flashy — this is a tool you trust daily. Sophisticated but approachable.
+Calm. Focused. Reliable. Built for professionals who handle volume without letting quality slip. Not flashy — a daily trust tool.
 
 ## Color Palette (Working)
 Deep navy / slate primary. White workspace background. Indigo accent for interactive and highlight elements.
 
 ## Strategic Principles
-- **Context-aware**: tasks come from where you work, not from a blank form
-- **Minimal friction**: lighter and faster than the tools it reads
-- **One source of truth**: everything actionable lives in one place
+- **Zendesk-native**: features built from the language and workflow of support operations
+- **AI writes, human decides**: every document is a draft; every metric surfaces an insight — the professional makes the call
+- **One source of truth**: tickets, docs, tasks, and notes all live and connect here
 
 ## MVP Scope
-Task management UI, AI-powered inbox analysis, note storage, smart reminders, Google/Apple Calendar sync, Granola integration.
+Zendesk ticket analysis (AI-powered), support document creation, HTML code generation for help center, task management, note storage, smart reminders, Google/Apple Calendar sync, Granola integration.
